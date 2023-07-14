@@ -3,9 +3,6 @@ name: Azure App Deploy
 on:
   push:
 
-env:
-  APP_NAME: ssq-sandbox-001-backend
-
 jobs:
   DEPLOY-PHP:
     name: Setup project
