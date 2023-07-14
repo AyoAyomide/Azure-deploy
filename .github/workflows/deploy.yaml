@@ -20,7 +20,7 @@ jobs:
 
       - name: Set up ssh key
         env:
-          SSH_HOME: /$HOME/.ssh
+          SSH_HOME: .ssh
         run: |
           mkdir -p ${{ env.SSH_HOME }}
           echo "${{ secrets.AZURE_SSH_PRV_KEY }}" > ${{ env.SSH_HOME }}/id_rsa
